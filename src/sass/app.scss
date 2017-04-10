@@ -1,0 +1,46 @@
+#app{
+	font-size: 16px;
+
+	.input-bar-container{
+		.input-bar {
+			color: #1E1E1E;
+			width: 100%;
+			height: 40px;
+			border-radius: 10px;
+			text-indent: 30px;
+		}
+		.input-icon{
+			color: #1E1E1E;
+			position: absolute;
+			top: 9px;
+			left: 22px;
+			font-size: 24px;
+		}
+	}
+
+	.list-items-container{
+		margin-top: 10px;
+		$colors: crimson, yellow, green, red, blue, orange, pink, white, aqua, brown;
+		$repeat: 10;
+
+		@for $i from 1 through $repeat {
+			.item:nth-child(#{$i}) {
+				color: lighten(nth($colors, $i), 20%);
+			}
+		}
+
+		.item{
+			padding: 5 10px;
+			text-align: center;
+			font-size: 32px;
+			text-transform: capitalize;
+
+			.item-icon {
+				float: right;
+				&:hover{
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
