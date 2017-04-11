@@ -1,8 +1,8 @@
 const defaultListReducerState = {
 	items: [
-		{id:1491856039549, value: 'Guitar'},
-		{id:1491856039550, value: 'Piano'},
-		{id:1491856039551, value: 'Viola'},
+		{id:1491856039549, value: 'Guitar', gif: 'http://media1.giphy.com/media/1RxlWYJ5hMYbS/200.gif'},
+		{id:1491856039550, value: 'Piano', gif: 'http://media2.giphy.com/media/8nhgZZMKUicpi/giphy.gif'},
+		{id:1491856039551, value: 'Viola', gif: 'http://media2.giphy.com/media/12D1TEPuOAdMzK/200.gif'}
 	]
 };
 
